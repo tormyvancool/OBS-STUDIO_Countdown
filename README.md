@@ -17,7 +17,7 @@ After the elapsed time you can have:
 - Tools > Scripts > + > drag the script *countdownadatpive.lua* inside that window > Open
 
 
-**USE**
+**USAGE**
 - Into a *Scene* create a *Text field* with **Text (GDI+)**
 - Name this text field as you wish
 - A window opens: jsut gve "OK"
