@@ -13,6 +13,7 @@ After the elapsed time you can have:
 - Download this script first
 - Open OBS
 - Tools > Scripts > + > drag the script *countdownadatpive.lua* inside that window > Open
+
 Enjoy
 
 
