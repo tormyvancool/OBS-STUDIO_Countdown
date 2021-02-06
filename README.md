@@ -1,4 +1,4 @@
-# OBS-STUDIO_Countdown
+# OBS STUDIO Countdown
 
 **A MUST HAVE SCRIPT**
 With this unique timer, you ca setup a Start TExt that serves to inform what will happen within  "X" days-hours-minutes-seconds
