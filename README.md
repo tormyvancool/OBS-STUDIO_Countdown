@@ -1,6 +1,7 @@
 # OBS STUDIO Countdown
 
 **A MUST HAVE SCRIPT**
+
 With this unique timer, you ca setup a *Start Text* that serves to inform what will happen within  "X" days-hours-minutes-seconds
 
 After the elapsed time you can have:
