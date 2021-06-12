@@ -5,6 +5,7 @@ total_seconds = 0
 cur_seconds   = 0
 last_text     = ""
 stop_text     = ""
+timer_format  = ""
 next_scene	  = ""
 start_recording = ""
 activated     = false
@@ -13,14 +14,33 @@ hotkey_id     = obs.OBS_INVALID_HOTKEY_ID
 
 -- Function to set the time text
 function set_time_text()
+	local text = ''
 	local seconds       = math.floor(cur_seconds % 60)
 	local total_minutes = math.floor(cur_seconds / 60)
 	local minutes       = math.floor(total_minutes % 60)
 	local total_hours   = math.floor(total_minutes / 60)
 	local hours	    = math.floor(total_hours % 24)
 	local days	    = math.floor(total_hours / 24)
-	local text      = string.format("%01d:%02d:%02d:%02d", days, hours, minutes, seconds)
-	text = start_text .. text
+
+	if timer_format == "ss" then
+		text = string.format("%02d", seconds)
+	end
+
+	if timer_format == "mm : ss" then
+		text = string.format("%02d:%02d", minutes, seconds)
+	end
+
+	if timer_format == "hh : mm : ss" then
+		text = string.format("%02d:%02d:%02d", hours, minutes, seconds)
+	end
+
+	if timer_format == "dd : hh : mm : ss" then
+		text = string.format("%01d:%02d:%02d:%02d", days, hours, minutes, seconds)
+	end
+
+	-- local text = string.format("%01d:%02d:%02d:%02d", days, hours, minutes, seconds)
+	
+	text = start_text  .. text
 
 	if cur_seconds < 1 then
 		if next_scene ~= "" and next_scene ~= "Use: FINAL TEXT" then
@@ -135,12 +155,21 @@ function script_properties()
 	obs.source_list_release(sources)
 
 
+	
+	local f = obs.obs_properties_add_list(props, "timer_format", "Format", obs.OBS_COMBO_TYPE_EDITABLE, obs.OBS_COMBO_FORMAT_STRING)
+	obs.obs_property_list_add_string(f, "ss", "ss")
+	obs.obs_property_list_add_string(f, "mm : ss", "mm : ss")
+	obs.obs_property_list_add_string(f, "hh : mm : ss", "hh : mm : ss")
+	obs.obs_property_list_add_string(f, "dd : hh : mm : ss", "dd : hh : mm : ss")
+
 	obs.obs_properties_add_text(props, "start_text", "Start Text", obs.OBS_TEXT_DEFAULT)
 	obs.obs_properties_add_text(props, "stop_text", "Final Text or leave blank", obs.OBS_TEXT_DEFAULT)
+
     local r = obs.obs_properties_add_list(props, "start_recording", "Start Recording: Yes/No", obs.OBS_COMBO_TYPE_EDITABLE, obs.OBS_COMBO_FORMAT_STRING)
-	local t = obs.obs_properties_add_list(props, "next_scene", "Next Scene -or-", obs.OBS_COMBO_TYPE_EDITABLE, obs.OBS_COMBO_FORMAT_STRING)
 	obs.obs_property_list_add_string(r, "Yes", "yes")
 	obs.obs_property_list_add_string(r, "No", "no")
+
+	local t = obs.obs_properties_add_list(props, "next_scene", "Next Scene -or-", obs.OBS_COMBO_TYPE_EDITABLE, obs.OBS_COMBO_FORMAT_STRING)
 	obs.obs_property_list_add_string(t, "Use: FINAL TEXT", "Use: FINAL TEXT")
 	local scenes = obs.obs_frontend_get_scene_names()
 	if scenes ~= nil then
@@ -175,6 +204,7 @@ function script_update(settings)
 	stop_text = obs.obs_data_get_string(settings, "stop_text")
 	next_scene = obs.obs_data_get_string(settings, "next_scene")
 	start_recording = obs.obs_data_get_string(settings, "start_recording")
+	timer_format = obs.obs_data_get_string(settings, "timer_format")
 
 	reset(true)
 end
@@ -189,6 +219,7 @@ function script_defaults(settings)
 	obs.obs_data_set_default_string(settings, "stop_text", "LIVE NOW!")
 	obs.obs_data_set_default_string(settings, "next_scene", "Use: FINAL TEXT")
 	obs.obs_data_set_default_string(settings, "start_recording", "No")
+	obs.obs_data_set_default_string(settings, "timer_format", "mm : ss")
 end
 
 -- A function named script_save will be called when the script is saved
