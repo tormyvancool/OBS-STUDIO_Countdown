@@ -33,7 +33,7 @@ The text field will have the content of the *countdownadaptive.lua*.
 Enjoy
 
 
-![](OBS_Counter.gif)
+![](OBS_Counter_2.1.gif)
 
 
 
