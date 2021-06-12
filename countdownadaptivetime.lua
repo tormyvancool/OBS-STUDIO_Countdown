@@ -191,7 +191,7 @@ end
 -- A function named script_description returns the description shown to
 -- the user
 function script_description()
-	return "COUNTDOWN ADAPTIVE v2.0\n\nTimer Source counts down to 00:00 and displays:\n> Start Text\n> Final Text\n> Switches to a scene\n> Starts Recording"
+	return "COUNTDOWN ADAPTIVE v2.1\n\nSelect the format you prefer\n\nTimer Source counts down to 00:00 and displays:\n> Start Text\n> Final Text\n> Switches to a scene\n> Starts Recording"
 end
 
 -- A function named script_update will be called when settings are changed

@@ -1,4 +1,4 @@
-# OBS STUDIO Countdown
+# OBS STUDIO Countdown v2.1
 
 **A MUST HAVE SCRIPT**
 
@@ -19,6 +19,7 @@ After the elapsed time you can have:
 
 **USAGE**
 - Into a *Scene* create a *Text field* with **Text (GDI+)**
+- Select the format you prefer
 - Name this text field as you wish
 - A window opens: jsut gve "OK"
 - Go to *Tools > Scripts*
