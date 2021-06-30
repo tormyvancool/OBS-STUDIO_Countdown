@@ -29,3 +29,10 @@ After the elapsed time you can have:
 ```
 
 The text field will have the content of the _TormyVanCool_OBS_AdaptiveCountDown.lua_.
+
+
+
+Enjoy
+
+
+![](OBS_Counter_2.1.gif)
