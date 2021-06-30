@@ -27,7 +27,7 @@ After the elapsed time you can have:
 - On *Timer Source* dropdown, check and select the new created text field.
 - Close
 
-The text field will have the content of the *countdownadaptive.lua*.
+The text field will have the content of the *TormyVanCool_OBS_AdaptiveCountDown.lua*.
 
 
 Enjoy
