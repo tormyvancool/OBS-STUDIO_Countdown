@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+## Welcome to Tormy VAN COOL's OBS Studio Countdown v2.1 Page
 
-You can use the [editor on GitHub](https://github.com/tormyvancool/OBS-STUDIO_Countdown/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### A MUST HAVE SCRIPT
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+With this unique timer, you can setup a *Start Text* that serves to inform what will happen within  "X" days-hours-minutes-seconds
 
-### Markdown
+After the elapsed time you can have:
+- A Final Text or
+- Switch to a scene that you can choose froma dropdown menu
+- You can even start the recording, if you select it form the drop down.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+### INSTALLATION
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+1. Download this script first
+2. Open OBS
+3. Tools > Scripts > + > drag the script _TormyVanCool_OBS_AdaptiveCountDown.lua_ inside that window > Open
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### USAGE
+```markdown
+1. Into a _Scene_ create a _Text field_ with **Text (GDI+)**
+2. Select the format you prefer
+3. Name this text field as you wish
+4. A window opens: jsut gve "OK"
+5. Go to *Tools > Scripts*
+6. Click on Refresh icon
+7. On *Timer Source* dropdown, check and select the new created text field.
+8. Close
+```
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tormyvancool/OBS-STUDIO_Countdown/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+The text field will have the content of the _TormyVanCool_OBS_AdaptiveCountDown.lua_.
