@@ -14,7 +14,7 @@ After the elapsed time you can have:
 **INSTALLATION**
 - Download this script first
 - Open OBS
-- Tools > Scripts > + > drag the script *countdownadatpive.lua* inside that window > Open
+- Tools > Scripts > + > drag the script *TormyVanCool_OBS_AdaptiveCountDown.lua* inside that window > Open
 
 
 **USAGE**
