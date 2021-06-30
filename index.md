@@ -35,4 +35,4 @@ The text field will have the content of the _TormyVanCool_OBS_AdaptiveCountDown.
 Enjoy
 
 
-![](OBS_Counter_2.1.gif)
+![](https://github.com/tormyvancool/OBS-STUDIO_Countdown/blob/main/OBS_Counter_2.1.gif)
