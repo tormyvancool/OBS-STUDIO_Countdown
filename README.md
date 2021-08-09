@@ -36,10 +36,12 @@ The text field will have the content of the *TormyVanCool_OBS_AdaptiveCountDown.
 Enjoy
 
 **TUTORIAL**
-Here a great video by **Scott Fletcher** illustrating the Countdown
+Here a great video by **Scott Fletcher** illustrating the Countdown. Please click on the picture to watch the video.
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=nlUixyGWU9w
 " target="_blank"><img src="http://img.youtube.com/vi/nlUixyGWU9w/maxresdefault.jpg" 
 alt="PROGRAM_RUNNER in FUNCTION" width="560" height="315" border="10" /></a>
+
 
 ![](OBS_Counter_2.1.gif)
 ![](OBS_Countdown.gif)
