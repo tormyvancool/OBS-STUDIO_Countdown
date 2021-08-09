@@ -2,7 +2,7 @@
 
 **A MUST HAVE SCRIPT**
 
-With this unique timer, you ca setup a *Start Text* that serves to inform what will happen within  "X" days-hours-minutes-seconds
+With this unique timer, youn ca setup a *Start Text* that serves to inform what will happen within  "X" days-hours-minutes-seconds
 
 After the elapsed time you can have:
 - A Final Text or
@@ -35,6 +35,11 @@ The text field will have the content of the *TormyVanCool_OBS_AdaptiveCountDown.
 
 Enjoy
 
+**TUTORIAL**
+Here a great video by **Scott Fletcher** illustrating the Countdown
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=nlUixyGWU9w
+" target="_blank"><img src="http://img.youtube.com/vi/nlUixyGWU9w/maxresdefault.jpg" 
+alt="PROGRAM_RUNNER in FUNCTION" width="560" height="315" border="10" /></a>
 
 ![](OBS_Counter_2.1.gif)
 ![](OBS_Countdown.gif)
