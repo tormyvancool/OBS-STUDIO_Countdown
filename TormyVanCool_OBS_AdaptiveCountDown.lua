@@ -1,3 +1,23 @@
+--[[
+Name: Adaptive CountDown
+Version: 2.1
+Original Release: feb 2018
+Owner: Tormy Van Cool
+User Cases:
+	-	Select the preferred format:
+		> dd.hh.mm.ss
+		> hh.mm.ss
+		> mm.ss
+		> ss
+		
+	-	Timer Source counts down to 00:00 and displays:
+		> Text Format
+		> Start Text
+		> Final Text
+		> Starts Recording
+		> Switches to a scene
+		> Setup Days, Hours, Minutes and Seconds
+]]
 obs           = obslua
 source_name   = ""
 total_seconds = 0
