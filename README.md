@@ -44,7 +44,7 @@ Here a great video by **Scott Fletcher** illustrating the Countdown. Please clic
 " target="_blank"><img src="http://img.youtube.com/vi/nlUixyGWU9w/maxresdefault.jpg" 
 alt="PROGRAM_RUNNER in FUNCTION" width="560" height="315" border="10" /></a>
 
-**PORTOGUESE**
+**PORTUGUESE**
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=6AjQ4HbT72U
 " target="_blank"><img src="http://img.youtube.com/vi/6AjQ4HbT72U/maxresdefault.jpg" 
